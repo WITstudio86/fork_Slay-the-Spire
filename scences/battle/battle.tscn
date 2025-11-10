@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dv6vjpex5s61s"]
+[gd_scene load_steps=3 format=3 uid="uid://dv6vjpex5s61s"]
 
 [ext_resource type="Texture2D" uid="uid://cp4iq5fd6j8be" path="res://art/background.png" id="1_6smsm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6smsm"]
+size = Vector2(256, 96)
 
 [node name="Battle" type="Node2D"]
 
@@ -8,3 +11,10 @@
 modulate = Color(0.3180198, 0.31801978, 0.31801975, 1)
 texture = ExtResource("1_6smsm")
 centered = false
+
+[node name="CardDropArea" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CardDropArea"]
+position = Vector2(128, 48)
+shape = SubResource("RectangleShape2D_6smsm")
