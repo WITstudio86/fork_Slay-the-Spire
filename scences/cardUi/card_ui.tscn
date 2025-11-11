@@ -15,6 +15,7 @@ offset_right = -231.0
 offset_bottom = -114.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(12, 15)
 theme = ExtResource("1_6nl0p")
 
 [node name="Color" type="ColorRect" parent="."]
